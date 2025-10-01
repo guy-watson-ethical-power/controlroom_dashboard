@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control Room Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --primary-color: #00414B;
+            --secondary-color: #FFFFFF;
+            --background-color: #F2F5F6;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--background-color) url('background.jpg') no-repeat center center fixed; /* Add background image */
+            background-size: cover; margin: 0; color: var(--primary-color); }
+        .container { max-width: 1200px; margin: 20px auto; background: var(--secondary-color); padding: 20px; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); display: grid; grid-template-columns: 250px 1fr; grid-gap: 20px; }
+        header { background: var(--primary-color); color: var(--secondary-color); text-align: left; padding: 10px; border-radius: 5px 5px 0 0; grid-column: 1 / span 2; }
+        h1 { margin: 0; font-size: 1.75em; }
+        nav { background: #eee; padding: 10px; border-bottom: 1px solid #ddd; grid-column: 1 / span 2; display: flex; justify-content: space-between; align-items: center; }
+        nav a { display: inline-block; padding: 8px 12px; margin-right: 10px; color: var(--primary-color); text-decoration: none; border-radius: 3px; }
+        nav a:hover { background: #ddd; }
+        .all-sites-button { background-color: #ff9800; color: var(--secondary-color); }
+        .all-sites-button:hover { background-color: #f57c00; }
+        .sidebar { padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: var(--background-color); }
+        .sidebar h2 { font-size: 1.25em; margin-bottom: 10px; color: var(--primary-color); }
+        ul { list-style: none; padding: 0; }
+        li { margin: 8px 0; }
+        a { text-decoration: none; color: #0078d4; font-size: 1em; }
+        a:hover { text-decoration: underline; }
+        .button-section { text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: var(--background-color); }
+        .button-section h2 { font-size: 1.25em; margin-bottom: 10px; color: var(--primary-color); }
+        .button { background-color: #00414B; color: var(--secondary-color); padding: 12px 24px; margin: 10px; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; }
+        .button:hover { background-color: #00869b; }
+        .list-divider { border-bottom: 2px solid #ddd; margin: 10px 0; }
+
+        .button a {
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            display: block; 
+        }
+
+        .button a:hover {
+            color: var(--secondary-color); 
+        }
+
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            .sidebar { margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Control Room Dashboard</h1>
+        </header>
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="#">Documents</a>
+                <a href="#">Learning</a>
+                <a href="map.html">O&M Portfolio Map</a>
+                <a href="#">String Testing Tools</a>
+                <a href="#">Contacts</a>
+            </div>
+            <a href="#" class="all-sites-button">All Site Information (Trello)*</a>
+        </nav>
+        <div class="sidebar">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://powercuts.nationalgrid.co.uk/" target="_blank">NGED Outage Map</a></li>
+                <li><a href="https://www.windy.com/-Temperature-temp?temp,52.325,-1.802,7" target="_blank">Windy</a></li>
+                <li><a href="https://weather.metoffice.gov.uk/forecast/uk" target="_blank">Met Office</a></li>
+                <li><a href="" target="_blank">Site Access Codes</a></li>
+                <li><a href="" target="_blank">Smart Logger Logins</a></li>
+                <li><a href="">Weekly Schedule</a></li>
+            </ul>
+            <h2>Monitoring</h2>
+            <ul>
+                <li><a href="" target="_blank">platform</a></li>
+                <li><a href="" target="_blank">platform</a></li>
+                <li><a href="" target="_blank">platforma></li>
+                <li><a href="" target="_blank">platform</a></li>
+                <li><a href="" target="_blank">platform</a></li>
+                <div class="list-divider"></div>
+                <li><a href="" target="_blank">platform</a></li>
+                <li><a href="" target="_blank">platform</a></li>
+            </ul>
+            <h2>Security</h2>
+            <ul>
+                <li><a href="" target="_blank">CCTV Site</a></li>
+                <li><a href="" target="_blank">CCTV Site(NZ)*</a></li>
+            </ul>
+        </div>
+        <div class="button-section">
+            <h2>General Process Forms</h2>
+            <button class="button">Site Outage</button>
+            <button class="button">CCTV Incident*</button>
+            <button class="button">Handover*</button>
+            <h2>BESS Process Forms</h2>
+            <button class="button"><a href="" target="_blank">BESS Reset</a></button>
+            <button class="button">Fire</button>
+            <button class="button">Rack Balancing*</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
